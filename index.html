@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Translator</title>
+    <meta name="description" content="Translate PDFs of any length page-by-page into multiple languages with Gemini AI." />
+    <meta property="og:title" content="PDF Translator" />
+    <meta property="og:description" content="Translate PDFs of any length page-by-page into multiple languages with Gemini AI." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;600&family=Noto+Sans+Bengali:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Gujarati:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+KR:wght@400;600&family=Noto+Sans+SC:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+      // Silence development HMR WebSocket connection errors in cloud sandbox
+      window.addEventListener('error', function(e) {
+        if (e.message && (e.message.indexOf('WebSocket') !== -1 || e.message.indexOf('websocket') !== -1)) {
+          e.stopImmediatePropagation();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e.reason && typeof e.reason.message === 'string' && (e.reason.message.indexOf('WebSocket') !== -1 || e.reason.message.indexOf('websocket') !== -1)) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
